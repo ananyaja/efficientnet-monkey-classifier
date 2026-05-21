@@ -71,7 +71,15 @@ The model was compiled with the **AdamW** optimizer alongside a rigorous **Autom
 * **Optimization Velocity:** `lr = 5e-4` (Halved stride speed for smooth error convergence)
 * **Epoch Budget:** 15 (Targeting GPU `cuda` acceleration platforms)
 
+### 📊 Empirical Telemetry Visuals
 
+To visually analyze the training stability, learning rate decay impact, and validation loss valleys across the 15-epoch sweep, refer to the generated optimization curves below:
+
+<p align="center">
+  <img src="Outputs/model3_training_metrics.png" alt="EfficientNet Training Metrics" width="90%">
+</p>
+
+*Figure 1: Dual-view performance dashboard showing step-by-step categorical accuracy progression (left) and the fluctuating cross-entropy loss optimization trend (right).*
 ---
 
 ## 💻 5. Installation & How to Run
