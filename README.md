@@ -83,16 +83,16 @@ Ensure you have Python 3.9+ and `pip` installed. It is highly recommended to use
 
 ```bash
 # 1. Clone the repository to your local machine
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
-cd YOUR_REPOSITORY_NAME
+!git clone https://github.com/ananyaja/efficientnet-monkey-classifier.git
+!cd efficientnet-monkey-classifier
 
 # 2. Create and activate a clean virtual environment
-python -m venv venv
+!python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
 # 3. Install core dependencies (PyTorch with CUDA support, torchvision, and tools)
-pip install torch torchvision --index-url [https://download.pytorch.org/whl/cu118](https://download.pytorch.org/whl/cu118)
-pip install matplotlib pandas numpy opencv-python tqdm
+!pip install torch torchvision --index-url [https://download.pytorch.org/whl/cu118](https://download.pytorch.org/whl/cu118)
+!pip install matplotlib pandas numpy opencv-python tqdm
 
 ```text
 ┌──────────────────────────────┐     ┌──────────────────────────────┐
