@@ -40,6 +40,11 @@ The system utilizes a structured primate dataset modeled after native cladogram 
 ### 🛠️ Data Integrity Engineering
 Raw text targets were programmatically converted via an exact lookup index into clean numerical tensors ($0 \dots 9$) inside a custom PyTorch dataset engine to prevent downstream cross-entropy runtime faults. To handle varying lighting environments and off-angle field captures, data transformations include horizontal reflections, spatial resizing, and ImageNet distribution channel normalization.
 
+## 🗂️ Dataset Source & Setup
+This project utilizes the **10 Monkeys Species Dataset**, a publicly available multi-class image recognition benchmark. 
+
+* **Raw Data Attributes:** 10 distinct monkey species categories, pre-processed into an array matrix representation for optimized pipeline loading.
+* **Access Note:** To comply with academic resource guidelines, the raw `.npy` and `.csv` data binaries are excluded from this repository. To replicate this study, place your localized dataset arrays inside the `/Data` directory prior to running the training pipeline.
 ---
 
 ## 🧠 3. System Architecture & Transfer Learning
